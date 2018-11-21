@@ -5,7 +5,7 @@ import BlankHeader from './BlankHeader';
 const CompanyLoginPage = () => (
     <div >
         <BlankHeader/>
-        <p>CompanyLoginPage</p>
+        <h2>Company Login</h2>
         <form >
             <input
                 type="text"
