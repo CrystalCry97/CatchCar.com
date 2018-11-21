@@ -1,26 +1,30 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
+html{
+    font-size: 62.5%;
+    color: white; //font color
 }
 
 body {
-  color: $dark-grey;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: $m-size;
-  line-height: 1.6;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    background: url("/images/bg.jpg");
+    background-size: cover;
+} 
+
+button{
+    cursor: pointer; //show pointer hand
 }
 
-button {
-  cursor: pointer;
+button:disabled{
+    cursor: default; //normal cursor
 }
 
-button:disabled {
-  cursor: default;
+.is-active{
+    font-weight: bold;
 }
 
-.is-active {
-  font-weight: bold;
+.link {
+    color: #FFFFFF;
+}
+.link:hover {
+    color: rgb(230, 42, 67);
 }
