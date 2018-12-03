@@ -31,7 +31,7 @@ export default class SearchForm extends React.Component{
         return(
             <div className="searchForm">
                 <div  className="searchForm__subcontainer">
-                    <img className="searchForm__radius" src="../../images/catchCar.png"/>
+                    <img className="searchForm__radius" src="../../images/catchcar.png"/>
                 </div>
                 <div className="searchForm__subcontainer">
 
