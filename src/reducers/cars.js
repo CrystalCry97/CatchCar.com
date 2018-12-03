@@ -21,6 +21,8 @@ const carsReducer = (state= carsReducerDefaultState, action)=>{
                     return car;
                 };
             }); 
+        case 'SET_CARS':
+            return action.cars;
         default:
             return state;
     }

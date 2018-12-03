@@ -8,7 +8,7 @@ const CompanyHeader = () => (
             <Link to="/">
                 <img className="header__logo" src="../../images/logoHeader.png"/>
             </Link>
-            <button><NavLink to="/company-login/dashboard/" activeClassName="is-active" exact={true}>Edit/Remove Car</NavLink></button>
+            <button><NavLink to="/company-login/dashboard/" activeClassName="is-active" exact={true}>List of Cars</NavLink></button>
             <button><NavLink to="/company-login/dashboard/add-car" activeClassName="is-active">Add New Car</NavLink></button>
         </div>
     </header>

@@ -29,19 +29,22 @@ export default class SearchForm extends React.Component{
 
     render(){
         return(
-            <div>
-                <div className="searchPage">
-                    <div className="searchForm">
-                        <form onSubmit={this.onSubmit}>
-                            <input 
-                                type="text"
-                                placeholder="Pickup Place"
-                                value={this.state.pickupLocation}
-                                onChange={this.onPickupLocationChange}
-                            />
-                            <button>Find a car</button>
-                        </form>
-                    </div>
+            <div className="searchForm">
+                <div  className="searchForm__subcontainer">
+                    <img className="searchForm__radius" src="../../images/catchCar.png"/>
+                </div>
+                <div className="searchForm__subcontainer">
+
+                    <form onSubmit={this.onSubmit}>
+                        <input 
+                            type="text"
+                            placeholder="Pickup Place"
+                            value={this.state.pickupLocation}
+                            onChange={this.onPickupLocationChange}
+                        />
+                        <button>Find a car</button>
+                    </form>
+
                 </div> 
             </div>  
         )

@@ -1,23 +1,16 @@
-.searchPage{
-    align-items: center;
-    display: flex;
-    height: 80vh;
-    width: 100vw;
+.searchForm{
+    margin-top:10%;
+}
+
+.searchForm__subcontainer{
     justify-content: center;
+    display: flex;
 }
 
-.searchForm {
-    background: fade-out(#f3c718, .15);
-    text-align: center;
-    border-radius: 3px;
-    padding: $l-size $m-size;
-    width: 25rem;
-}
-
-.border-radius{
-    border: 10px solid black;
+.searchForm__radius{
+    border: 3px solid white;
     border-radius: 50%;
-    margin-left: $l-size;
-    height:80%;
-    width:80%;
+    margin-bottom: $l-size;
+    width:200px;
+    height:200px;
 }

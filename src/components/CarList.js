@@ -5,7 +5,7 @@ import getVisibleCars from '../selectors/cars';
 
 export const CarList = (props) =>(
     <div>
-        <div className="searchForm">
+        <div className="carlist__container">
         <h1>LIST CARS</h1>
             {
                 props.cars.length === 0 ? (

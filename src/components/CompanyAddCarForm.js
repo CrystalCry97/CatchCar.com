@@ -63,10 +63,11 @@ export default class CompanyAddCarForm extends React.Component{
     };
     render(){
         return(
-            <div>
+            <div className="companyaddcarform__container">
                 {this.state.error && <p><b>{this.state.error}</b></p>}
                 <form onSubmit={this.onSubmit}>
                     <input
+                        className="companyaddcarform__input"
                         type="text"
                         placeholder="Brand Car"
                         autoFocus
@@ -74,35 +75,41 @@ export default class CompanyAddCarForm extends React.Component{
                         onChange={this.oncarBrandChange}
                     />
                     <input 
+                        className="companyaddcarform__input"
                         type="text"
                         placeholder="Number of car seats"
                         value={this.state.carSeats}
                         onChange={this.onCarSeatsChange}
                     />
-                    <input 
+                    <input
+                        className="companyaddcarform__input" 
                         type="text"
                         placeholder="Air Conditioning"
                         value={this.state.airConditioning}
                         onChange={this.onAirConditioningChange}
                     />
-                    <input 
+                    <input
+                        className="companyaddcarform__input" 
                         type="text"
                         placeholder="Gearbox"
                         value={this.state.gearBox}
                         onChange={this.onGearBoxChange}
                     />
-                    <input 
+                    <input
+                        className="companyaddcarform__input" 
                         type="text"
                         placeholder="Location"
                         value={this.state.location}
                         onChange={this.onLocationChange}
                     />
                     <input 
+                        className="companyaddcarform__input"
                         type="text"
                         placeholder="Price Per Day"
                         value={this.state.pricePerDay}
                         onChange={this.onPricePerDayChange}
                     />
+                    <br />
                     <button>Add Car</button>
                 </form>
             </div>

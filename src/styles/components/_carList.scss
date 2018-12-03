@@ -1,0 +1,11 @@
+.carlist__container {
+    background: fade-out(#f3c718, .15);
+    text-align: center;
+    border-radius: 3px;
+    padding: $l-size $m-size;
+    width: 25rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
