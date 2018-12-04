@@ -116,12 +116,3 @@ export default class CompanyAddCarForm extends React.Component{
         )
     }
 }
-
-// carBrand= '',
-//     carSeats= 0,
-//     airConditioning= '',
-//     gearBox= '',
-//     location='',
-//     pricePerDay=0,
-//     availableOn= 0,
-//     rating=0

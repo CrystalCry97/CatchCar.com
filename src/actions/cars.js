@@ -2,28 +2,9 @@ import uuid from 'uuid'; //random id generator
 import database from '../firebase/firebase'; 
 
 //ADD_CAR
-export const addCar =({
-    carBrand= '',
-    carSeats= 0,
-    airConditioning= '',
-    gearBox= '',
-    location='',
-    pricePerDay=0,
-    availableOn= 0,
-    rating=0
-}={}) =>({
+export const addCar =(car) =>({
     type:'ADD_CAR',
-    car:{
-        id: uuid(),
-        carBrand,
-        carSeats,
-        airConditioning,
-        gearBox,
-        location,
-        pricePerDay,
-        availableOn,
-        rating
-    }
+    car
 });
 
 export const startAddCar= (carData={}) => {

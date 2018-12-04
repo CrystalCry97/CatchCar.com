@@ -4,10 +4,6 @@ import { DateRangePicker } from 'react-dates';
 import { setPickupLocationFilter, sortByRating, sortByPrice } from '../actions/filters';
 
 class CarListFilters extends React.Component{
-    state= {
-        //calendar=null ....
-    };
-    
     render(){
         return (
             <div className="carlistfilters">

@@ -1,10 +1,9 @@
 import React from 'react';
-import CompanyDashboardPage from './CompanyDashboardPage';
 
 
 const CompanyEditCarPage = () => (
     <div>
-        
+        <p>Edit Car Here</p>
         
     </div>
 );
