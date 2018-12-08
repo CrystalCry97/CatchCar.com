@@ -9,6 +9,7 @@ const filtersReducerDefaultState = {
 const filtersReducer= (state= filtersReducerDefaultState,action) =>{
     switch(action.type){
         case 'SET_PICKUP_LOCATION_FILTER':
+            console.log("set location");
             return {
                 ...state,
                 pickupLocation: action.pickupLocation

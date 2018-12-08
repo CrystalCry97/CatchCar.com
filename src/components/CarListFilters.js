@@ -4,29 +4,51 @@ import { DateRangePicker } from 'react-dates';
 import { setPickupLocationFilter, sortByRating, sortByPrice } from '../actions/filters';
 
 class CarListFilters extends React.Component{
+    state ={
+        pickUpLocation:'',
+        sortBy:''
+    };
+
+    onPickupLocationChange = (e) =>{
+        const pickUpLocation= e.target.value;
+        this.setState(()=> ({pickUpLocation}));
+    };
+
+    onSortByChange= (e) =>{
+        const sortBy= e.target.value;
+        this.setState(() => ({sortBy}));
+    };
+
+    onSubmit = (e) =>{
+        e.preventDefault();
+        this.props.dispatch(setPickupLocationFilter(this.state.pickUpLocation));
+        if(this.state.sortBy === "rating"){
+            console.log("set: rating");
+            this.props.dispatch(sortByRating());
+        }else if (this.state.sortBy === "price"){
+            console.log("set: price");
+            this.props.dispatch(sortByPrice());
+        }
+
+    };
+
     render(){
         return (
             <div className="carlistfilters">
+                <form onSubmit={this.onSubmit}>
                     <input 
                         type="text" 
                         placeholder="Pickup location"
-                        value={this.props.filters.location}
-                        onChange= {(e) => {
-                            this.props.dispatch(setPickupLocationFilter(e.target.value));
-                            console.log(e.target.value)
-                        }}
+                        value={this.state.pickUpLocation}
+                        onChange= {this.onPickupLocationChange}
                     />
-                    <select value={this.props.filters.sortBy} onChange={(e) => {
-                        if(e.target.value === "rating"){
-                            this.props.dispatch(sortByRating());
-                        }
-                        else if(e.target.value === "price"){
-                            this.props.dispatch(sortByPrice());
-                        }
-                    }}>
+                    <select value={this.state.sortBy} onChange={this.onSortByChange}>
                         <option value="rating">Rating</option>
                         <option value="price">Price</option>
                     </select>
+                    <button>Find Cars</button>
+                </form>
+
             </div>
         );
     }

@@ -7,6 +7,7 @@ const CarListItem = ({carBrand, carSeats, airConditioning, gearBox, location, pr
         <p>Gearbox: {gearBox}</p>
         <p>Location: {location}</p>
         <p>Rating: {rating}</p>
+        <p>Price per day: {pricePerDay}</p>
         <button>Book Now!</button>
         <br/> 
     </div>
