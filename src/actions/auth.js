@@ -33,3 +33,11 @@ export const startLogout = () => {
         });
     };
 };
+
+export const registerCompany =(companyInfo) =>{
+    return() => {
+        return firebase.auth().createUserWithEmailAndPassword(companyInfo.email, companyInfo.password).catch((error) =>{
+            console.log(error);
+          });
+    }
+}
