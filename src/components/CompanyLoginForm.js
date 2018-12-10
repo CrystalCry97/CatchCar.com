@@ -47,7 +47,7 @@ export default class CompanyLoginForm extends React.Component{
                             <div className="companyloginpage__form-group">
                                 <h2>Rental Company</h2>
                                 {this.state.error && <p><b>{this.state.error}</b></p>}
-                                <h3><b>Username: </b><input className="form-control" id="username" value={this.state.email} onChange={this.onEmailChange} type="text" placeholder="eg: CompanyA" required="required" data-validation-required-message="Please enter your username."/></h3>	    
+                                <h3><b>Username: </b><input className="form-control" id="username" value={this.state.email} onChange={this.onEmailChange} type="text" placeholder="eg: CompanyA"  data-validation-required-message="Please enter your username."/></h3>	    
                             </div>
                             
                             <div className="companyloginpage__form-group">
@@ -63,7 +63,7 @@ export default class CompanyLoginForm extends React.Component{
                             </div>
 
                             {/*SIGN UP LINK*/}
-                            <h5><Link  to="/rentalcompsignup">Didn't have account? Sign up now</Link></h5>
+                            <h5><Link  to="/company-signup">Didn't have account? Sign up now</Link></h5>
                                 
                         </div>		
                     </div>

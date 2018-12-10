@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import FrontHeader from '../components/Header/FrontPageHeader';
-import SearchForm from './SearchForm';
+import FrontSearchForm from './FrontSearchForm';
 import { setPickupLocationFilter} from '../actions/filters';
 
 const FrontPage = (props) => (
     <div >
         <FrontHeader />
-        <SearchForm 
+        <FrontSearchForm 
             onSubmit= {(filterData)=> {
                 console.log(filterData.pickupLocation);
                 props.dispatch(setPickupLocationFilter(filterData.pickupLocation));
