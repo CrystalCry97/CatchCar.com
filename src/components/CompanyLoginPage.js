@@ -1,9 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import BlankHeader from './BlankHeader';
+import { companylogin } from '../actions/auth';
 
-const CompanyLoginPage = () => (
-    <div >
+export class CompanyLoginPage extends React.Component{
+
+    login =(e) =>{
+        console.log("test Login button");
+        this.props.companylogin;
+    }
+
+    render(){
+        return(
+            <div >
         <BlankHeader/>
         <div className="companyloginpage__column">
             <form id="loginform" noValidate="validate">
@@ -23,7 +32,7 @@ const CompanyLoginPage = () => (
                         {/*LOG IN BUTTON*/}
                         <div className="companyloginpage__form-group ">
                             <div id="success"></div>
-                            <Link to="/company-login/dashboard/" className="companyloginpage__btn" >Login</Link>
+                            <Link to="/company-login/dashboard/" onClick={this.login} className="companyloginpage__btn" >Login</Link>
                         </div>
 
                         {/*SIGN UP LINK*/}
@@ -35,7 +44,9 @@ const CompanyLoginPage = () => (
         </div>	
         
     </div>
-);
+        )
+    }
+}
 
 export default CompanyLoginPage;
 
