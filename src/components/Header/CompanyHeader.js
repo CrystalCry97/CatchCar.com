@@ -18,6 +18,11 @@ const CompanyHeader = () => (
                     Add New Car
                 </NavLink>
             </button>
+            <button>
+                <NavLink to="/company-login/" >
+                    Log Out
+                </NavLink>
+            </button>
         </div>
     </header>
 );

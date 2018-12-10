@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FrontHeader from '../components/FrontHeader';
+import FrontHeader from '../components/Header/FrontPageHeader';
 import SearchForm from './SearchForm';
 import { setPickupLocationFilter} from '../actions/filters';
 

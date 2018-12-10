@@ -5,12 +5,14 @@ export const login = (uid) => ({
     uid
 });
 
-export const startLogin = (email,password) => {
+export const startLogin = (userAuth) => {
     return() => {
-        return firebase.auth().signInWithEmailAndPassword(email,password).then((u)=>{
-
+        return firebase.auth().signInWithEmailAndPassword(userAuth.email,userAuth.password).then((u)=>{
+            console.log("success");
         }).catch((error) => {
             console.log(error);
+            console.log("email get here: "+ userAuth.email);
+            console.log("password get here: "+ userAuth.password);
         });
   };
 };
