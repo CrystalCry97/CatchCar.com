@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyHeader from './CompanyHeader';
+import CompanyHeader from './Header/CompanyHeader';
 import CompanyCarList from '../components/CompanyCarList';
 
 const CompanyDashboardPage = () => (

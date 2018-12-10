@@ -1,13 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {NavLink} from 'react-router-dom';
+import {connect} from 'react-redux';
+import { startLogout } from '../../actions/auth';
 
-const CompanyHeader = () => (
+const CompanyHeader = ({startLogout}) => (
     <header>
         <div  className="header">
-            <Link to="/">
+            <NavLink to="/">
                 <img className="header__logo" src="../../images/logoHeader.png"/>
-            </Link>
+            </NavLink>
             <button>
                 <NavLink to="/company-login/dashboard/" activeClassName="is-active" exact={true}>
                     List of Cars
@@ -18,8 +19,17 @@ const CompanyHeader = () => (
                     Add New Car
                 </NavLink>
             </button>
+            <button>
+                <NavLink to="/company-login/" onClick={startLogout} >
+                    Log Out
+                </NavLink>
+            </button>
         </div>
     </header>
 );
 
-export default CompanyHeader;
+const mapDispatchToProps= (dispatch) => ({
+    startLogout: () => dispatch(startLogout())
+});
+
+export default connect(undefined,mapDispatchToProps)(CompanyHeader);

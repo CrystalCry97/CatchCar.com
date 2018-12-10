@@ -5,12 +5,12 @@ import getVisibleCars from '../selectors/cars';
 
 export const CarList = (props) =>(
     <div>
+        <h1>Search Result</h1>
         <div className="carlist__container">
-        <h1>LIST CARS</h1>
             {
                 props.cars.length === 0 ? (
                     <p>No cars in the list</p>
-                ):(    
+                ):(                    
                     props.cars.map((car) => {
                         return <CarListItem key={car.id} {...car}/>;
                     })

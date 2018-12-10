@@ -52,7 +52,7 @@ export const editCar = (id, updates) => ({
     updates
 });
 
-// SET_EXPENSES
+// SET_CARS
 export const setCars = (cars) => ({
     type: 'SET_CARS',
     cars

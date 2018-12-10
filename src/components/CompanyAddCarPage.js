@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import CompanyHeader from './CompanyHeader';
+import CompanyHeader from './Header/CompanyHeader';
 import CompanyAddCarForm from './CompanyAddCarForm';
 import { startAddCar } from '../actions/cars';
 
