@@ -5,7 +5,9 @@ export const login = (uid) => ({
     uid
 });
 
+
 export const startLogin = (userAuth) => {
+
     return() => {
         return firebase.auth().signInWithEmailAndPassword(userAuth.email,userAuth.password).then((u)=>{
             console.log("login success");
@@ -31,3 +33,11 @@ export const startLogout = () => {
         });
     };
 };
+
+export const registerCompany =(companyInfo) =>{
+    return() => {
+        return firebase.auth().createUserWithEmailAndPassword(companyInfo.email, companyInfo.password).catch((error) =>{
+            console.log(error);
+          });
+    }
+}

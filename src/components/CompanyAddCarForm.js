@@ -64,7 +64,7 @@ export default class CompanyAddCarForm extends React.Component{
     render(){
         return(
             <div className="companyaddcarform__container">
-                {this.state.error && <p><b>{this.state.error}</b></p>}
+                {this.state.error}
                 <form onSubmit={this.onSubmit}>
                     <input
                         className="companyaddcarform__input"
