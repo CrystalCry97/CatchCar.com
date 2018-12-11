@@ -11,6 +11,17 @@
     border: 3px solid white;
     border-radius: 50%;
     margin-bottom: $l-size;
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
+}
+
+.searchForm_pickupLocation{
+    height:30px;
+    width: 300px;
+}
+
+.searchForm_findButn{
+    padding-left: 10px;
+    height: 35px;
+    width: 100px;
 }

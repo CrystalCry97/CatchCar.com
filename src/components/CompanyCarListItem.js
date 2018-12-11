@@ -7,7 +7,7 @@ const CompanyCarListItem = ({id, carBrand, carSeats, airConditioning, gearBox, l
             <h3>{carBrand}</h3>
         </Link>
         <p>Location: {location}</p>
-        <p>Price per day: {pricePerDay}</p>
+        <p>Price per day: RM {pricePerDay/100}</p>
         <p>Rating: {rating}</p>
     </div>
 );

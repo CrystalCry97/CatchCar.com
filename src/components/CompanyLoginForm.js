@@ -58,8 +58,7 @@ export default class CompanyLoginForm extends React.Component{
                             {/*LOG IN BUTTON*/}
                             <div className="companyloginpage__form-group ">
                                 <div id="success"></div>
-                                {/*<Link to="/company-login/dashboard/" onClick={this.onSubmit} className="companyloginpage__btn" >Login</Link>*/}
-                                <button onClick={this.onSubmit}>Login</button>
+                                <button onClick={this.onSubmit} className="companyloginpage__btn">Login</button>
                             </div>
 
                             {/*SIGN UP LINK*/}

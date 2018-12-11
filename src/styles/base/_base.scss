@@ -6,9 +6,13 @@ html{
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
-    //background: url("/images/bg.jpg") no-repeat;
+    background: url("/images/bg.jpg") no-repeat;
     background-size: cover;
 } 
+
+h1{
+    padding-left: 20px;
+}
 
 button{
     cursor: pointer; //show pointer hand
@@ -19,12 +23,6 @@ button:disabled{
 }
 
 .is-active{
-    font-weight: bold;
-}
-
-.link {
-    color: #FFFFFF;
-}
-.link:hover {
-    color: rgb(230, 42, 67);
+    color: #ffffff;
+    background: #000000;
 }

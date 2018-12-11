@@ -6,7 +6,7 @@ import CompanyLoginForm from './CompanyLoginForm';
 
 export class CompanyLoginPage extends React.Component{
     onSubmit= (companyAuth)=>{
-        console.log(companyAuth);
+        console.log(this.props);
         this.props.startLogin(companyAuth);
         this.props.history.push('/company-login/dashboard');
     };
@@ -16,15 +16,15 @@ export class CompanyLoginPage extends React.Component{
             <div>
                 <BlankHeader />
                 <CompanyLoginForm 
-                    onSubmit={this.onSubmit} />
+                    onSubmit={this.onSubmit} 
+                />
             </div>
         )
     }
 }
 
-const mapDispatchToProps =(dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
     startLogin: (companyAuth) => dispatch(startLogin(companyAuth))
 });
 
-export default connect(undefined,mapDispatchToProps)(CompanyLoginPage);
-
+export default connect (undefined,mapDispatchToProps)(CompanyLoginPage);

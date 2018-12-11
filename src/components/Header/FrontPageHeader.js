@@ -8,9 +8,7 @@ const FrontHeader = () => (
                 <img className="header__logo" src="images/logoHeader.png"/>
             </Link>
             <div className="header__nav">
-                <button className="header__button">
-                    <Link to="/company-login" className="link" >Company Login</Link>
-                </button>
+                <Link to="/company-login" className="companyDashboard__tabBtn"  >Company Login</Link>
             </div>
         </div>
     </header>

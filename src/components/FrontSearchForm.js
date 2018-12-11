@@ -37,12 +37,13 @@ export default class SearchForm extends React.Component{
 
                     <form onSubmit={this.onSubmit}>
                         <input 
+                            className="searchForm_pickupLocation"
                             type="text"
                             placeholder="Pickup Place"
                             value={this.state.pickupLocation}
                             onChange={this.onPickupLocationChange}
                         />
-                        <button>Find a car</button>
+                        <button className="searchForm_findButn">Find a car</button>
                     </form>
 
                 </div> 

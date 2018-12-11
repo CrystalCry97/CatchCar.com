@@ -1,11 +1,11 @@
 .companyloginpage__column {
     padding-top: 50px;
+    padding-right: 50px;
     float: right;
-    width: 50%;
 }
 
 .companyloginpage__form-group {
-    padding: 10px 50px;
+    padding-top: 10px;
     
 }
 
@@ -14,17 +14,21 @@
     width: 500px;
     color: #333;
     background: #f3c718;
-    margin: 0px 0px 0px 0px;
     height: 400px;
 }
 
 
 .companyloginpage__btn{
-background-color: black;
-color: #f3c718;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+    background-color: #f3c718;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.companyloginpage__btn:hover{
+    background-color: black;
+    color: #f3c718;
 }

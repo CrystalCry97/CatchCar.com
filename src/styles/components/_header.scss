@@ -2,6 +2,8 @@
     background: #f3c718;
     color: white;
     padding: $xs-size 0;
+    display: flex;
+    
 }
 
 .header__logo{
@@ -9,11 +11,20 @@
 }
 
 .header__nav{
-    float: right;
-    padding: $m-size $m-size;
+    margin-left: auto;
 }
 
-.header__button{
-    background-color: black;
+.companyDashboard__tabBtn{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
+
+.companyDashboard__tabBtn:hover{
+    background-color: black;
+    color: #f3c718;
+}
+
 

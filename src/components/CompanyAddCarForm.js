@@ -66,6 +66,8 @@ export default class CompanyAddCarForm extends React.Component{
             <div className="companyaddcarform__container">
                 {this.state.error}
                 <form onSubmit={this.onSubmit}>
+                    {/** CAnnot upload image yet ! */}
+                    <input className="companyaddcarform__input" type="file" name="pic" accept="image/*" />
                     <input
                         className="companyaddcarform__input"
                         type="text"
@@ -95,6 +97,15 @@ export default class CompanyAddCarForm extends React.Component{
                         value={this.state.gearBox}
                         onChange={this.onGearBoxChange}
                     />
+
+                    {/** 
+                    <input type="radio" id="contactChoice1" name="contact" value="email"/>
+                    <label for="contactChoice1">Email</label>
+
+                    <input type="radio" id="contactChoice2" name="contact" value="phone"/>
+                    <label for="contactChoice2">Phone</label>
+                    */}
+                    
                     <input
                         className="companyaddcarform__input" 
                         type="text"

@@ -9,21 +9,18 @@ const CompanyHeader = ({startLogout}) => (
             <NavLink to="/">
                 <img className="header__logo" src="../../images/logoHeader.png"/>
             </NavLink>
-            <button>
-                <NavLink to="/company-login/dashboard/" activeClassName="is-active" exact={true}>
+            <div className="header__nav">
+                <NavLink to="/company-login/dashboard/"  className="companyDashboard__tabBtn" activeClassName="is-active" exact={true}>
                     List of Cars
                 </NavLink>
-            </button>
-            <button>
-                <NavLink to="/company-login/dashboard/add-car" activeClassName="is-active">
+                <NavLink to="/company-login/dashboard/add-car" className="companyDashboard__tabBtn"  activeClassName="is-active">
                     Add New Car
                 </NavLink>
-            </button>
-            <button>
-                <NavLink to="/company-login/" onClick={startLogout} >
-                    Log Out
+                <NavLink to="/company-login/"  onClick={startLogout} className="companyDashboard__tabBtn">
+                    Log Out  
                 </NavLink>
-            </button>
+            </div>
+            
         </div>
     </header>
 );
